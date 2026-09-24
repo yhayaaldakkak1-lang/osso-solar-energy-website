@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Osso Solar Energy | Photovoltaik für dein Zuhause</title>
+<meta name="description" content="Photovoltaik, Stromspeicher und Wallbox von Osso Solar Energy. Kostenloser Vor-Ort-Termin. Jetzt anrufen oder per WhatsApp schreiben.">
+<meta name="theme-color" content="#E9EFF2">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<!-- DEPLOY STEP: replace https://EXAMPLE.invalid with the live address. og:url and og:image need absolute URLs. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Osso Solar Energy">
+<meta property="og:title" content="Osso Solar Energy | Photovoltaik für dein Zuhause">
+<meta property="og:description" content="Ab jetzt arbeitet dein Dach für dich. Kostenlosen Vor-Ort-Termin vereinbaren.">
+<meta property="og:url" content="https://EXAMPLE.invalid/">
+<meta property="og:image" content="https://EXAMPLE.invalid/assets/og-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+
+<script>
+/* Decide the layout before first paint. The scroll journey is an upgrade: if the visitor
+   prefers reduced motion, or the script never arrives, the page stays the calm static version. */
+(function () {
+  var r = document.documentElement;
+  r.classList.add('js');
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) r.classList.add('scrub', 'hold-on');
+  setTimeout(function () {
+    if (!window.__ossoReady) r.classList.remove('scrub', 'hold-on');
+  }, 5000);
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<div class="env" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Osso Solar Energy, zum Seitenanfang">
+    <img src="assets/logo-mark-128.png" width="38" height="38" alt="">
+    <span class="wordmark"><b>OSSO</b><span>Solar Energy</span></span>
+  </a>
+  <nav class="nav-links" aria-label="Hauptmenü">
+    <a href="#ablauf">Ablauf</a>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#fragen">Fragen</a>
+  </nav>
+  <a class="btn btn-primary btn-sm" href="#kontakt"><span class="long">Termin vereinbaren</span><span class="short">Termin</span></a>
+</header>
+
+<main id="main" tabindex="-1">
+  <h1 class="sr">Osso Solar Energy: Photovoltaik für dein Zuhause</h1>
+
+  <!-- HERO: one continuous scroll journey in three steps: clean roof, rails (Unterkonstruktion), modules. -->
+  <section class="hero" id="hero" aria-label="Ein Dach bekommt Solarmodule">
+    <span id="top"></span>
+    <div class="stage">
+      <div class="poster">
+        <img src="assets/hero-c.webp" width="2048" height="672" alt="Visualisierung: Wohnhaus von oben mit Solarmodulen auf dem Ziegeldach" fetchpriority="high">
+      </div>
+      <p class="viz" aria-hidden="true">Visualisierung</p>
+      <canvas id="fx" aria-hidden="true"></canvas>
+      <div class="scrim" aria-hidden="true"></div>
+
+      <div class="band b1" data-a="0" data-b="0.22" data-first>
+        <div class="inner">
+          <p class="chip"><span class="dot"></span>Osso Solar Energy · Photovoltaik</p>
+          <p class="display" data-split="blur">Dieses Dach wartet.</p>
+          <p class="cue" aria-hidden="true"><span class="cue-line"></span>Scrollen</p>
+        </div>
+      </div>
+
+      <div class="band b2" data-a="0.25" data-b="0.47">
+        <div class="inner">
+          <p class="chip"><span class="dot"></span>Schritt 1 · Unterkonstruktion</p>
+          <p class="display" data-split="words">Erst die Schienen.</p>
+        </div>
+      </div>
+
+      <div class="band b3" data-a="0.51" data-b="0.73">
+        <div class="inner">
+          <p class="chip"><span class="dot"></span>Schritt 2 · Module</p>
+          <p class="display" data-split="chars">Licht an.</p>
+        </div>
+      </div>
+
+      <div class="band b4" data-a="0.77" data-b="1" data-last>
+        <div class="inner">
+          <h2 class="display" data-split="words">Ab jetzt arbeitet dein Dach für dich.</h2>
+          <p class="sub">Photovoltaik für dein Zuhause. Wir kümmern uns um alles, von der Planung bis zum ersten Sonnenstrom.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary pulse" href="#kontakt">Kostenlosen Vor-Ort-Termin vereinbaren</a>
+            <a class="btn btn-ghost" href="https://wa.me/4915737627917?text=Hallo%20Osso%20Solar%20Energy%2C%20ich%20m%C3%B6chte%20einen%20Vor-Ort-Termin%20vereinbaren." rel="noopener">Per WhatsApp schreiben</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zahlen -->
+  <section class="stats" aria-label="Osso Solar Energy in Zahlen">
+    <div class="wrap">
+      <ul class="stats-grid" data-stagger>
+        <li data-reveal><p class="stat-num">100+</p><p class="stat-label">Projekte realisiert</p></li>
+        <li data-reveal><p class="stat-num">500+</p><p class="stat-label">kWp installiert</p></li>
+        <li data-reveal><p class="stat-num">100%</p><p class="stat-label">Kundenzufriedenheit</p></li>
+        <li data-reveal><p class="stat-num">24h</p><p class="stat-label">Reaktionszeit</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Leistungsband -->
+  <section class="strip" aria-label="Unsere Leistungen">
+    <ul class="strip-list">
+      <li>Photovoltaik</li>
+      <li>Stromspeicher</li>
+      <li>Wallbox</li>
+      <li>Flachdach &amp; Gewerbe</li>
+      <li>Repowering</li>
+    </ul>
+  </section>
+
+  <!-- Drei Dinge -->
+  <section class="promises" id="versprechen">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>Worauf du dich verlassen kannst</p>
+      <h2 class="h2" data-reveal>Drei Dinge, die bei uns selbstverständlich sind.</h2>
+      <div class="promise-grid" data-stagger>
+        <article class="promise" data-reveal>
+          <span class="rule" aria-hidden="true"></span>
+          <h3 class="display">Pünktlich.</h3>
+          <p>Wenn wir einen Termin nennen, sind wir da.</p>
+        </article>
+        <article class="promise" data-reveal>
+          <span class="rule" aria-hidden="true"></span>
+          <h3 class="display">Sauber.</h3>
+          <p>Dach und Grundstück verlassen wir ordentlich, ohne Reste und ohne Chaos.</p>
+        </article>
+        <article class="promise" data-reveal>
+          <span class="rule" aria-hidden="true"></span>
+          <h3 class="display">Erreichbar.</h3>
+          <p>Auch nach dem Einbau erreichst du uns. Ein Anruf genügt.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ablauf -->
+  <section class="steps" id="ablauf">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>Der Weg</p>
+      <h2 class="h2" data-reveal>So kommt die Sonne auf dein Dach.</h2>
+      <div class="steps-grid" data-stagger>
+        <svg class="cable cable-h" viewBox="0 0 1000 8" preserveAspectRatio="none" aria-hidden="true"><path class="cable-path" pathLength="1" d="M0 4H1000"/></svg>
+        <svg class="cable cable-v" viewBox="0 0 8 1000" preserveAspectRatio="none" aria-hidden="true"><path class="cable-path" pathLength="1" d="M4 0V1000"/></svg>
+
+        <article class="step" data-reveal>
+          <p class="num">01</p>
+          <figure class="ph"><img src="assets/light-before.webp" width="1180" height="1210" loading="lazy" alt="Dach eines Wohnhauses vor der Montage" style="object-position:50% 34%"></figure>
+          <h3>Wir sehen uns dein Dach an.</h3>
+          <p>Beim Vor-Ort-Termin prüfen wir Dach, Zählerschrank und Leitungen. Kostenlos und unverbindlich.</p>
+        </article>
+        <article class="step" data-reveal>
+          <p class="num">02</p>
+          <figure class="ph"><img src="assets/project-flat.webp" width="1206" height="660" loading="lazy" alt="Flachdach von oben mit sauber verlegten Solarmodulen" style="object-position:38% 50%"></figure>
+          <h3>Du bekommst ein klares Angebot.</h3>
+          <p>Alle Kosten stehen schwarz auf weiß im Angebot. Vorher musst du nichts unterschreiben.</p>
+        </article>
+        <article class="step" data-reveal>
+          <p class="num">03</p>
+          <figure class="ph"><img src="assets/light-after.webp" width="1180" height="1210" loading="lazy" alt="Monteur auf einem Gerüst neben dem Dach mit neuen Solarmodulen" style="object-position:82% 76%"></figure>
+          <h3>Wir bauen ein.</h3>
+          <p>Wir montieren die Module Stück für Stück. Du musst dafür nichts vorbereiten.</p>
+        </article>
+        <article class="step" data-reveal>
+          <p class="num">04</p>
+          <figure class="ph"><img src="assets/project-roof.webp" width="1180" height="878" loading="lazy" alt="Fertige Solaranlage auf einem Dach unter blauem Himmel" style="object-position:40% 50%"></figure>
+          <h3>Wir schalten die Anlage an.</h3>
+          <p>Zum Schluss zeigen wir dir, wie alles funktioniert. Dann läuft dein erster Sonnenstrom.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Der eine interaktive Moment -->
+  <section class="light" id="licht">
+    <div class="wrap light-grid">
+      <div class="light-copy">
+        <p class="eyebrow"><span class="dot"></span>Ausprobieren</p>
+        <h2 class="h2" data-reveal>Halte gedrückt. Das Dach wacht auf.</h2>
+        <p class="lead" data-reveal>So sah dieses Dach vorher aus. Halte den Knopf gedrückt und sieh zu, wie das Licht die Anlage sichtbar macht.</p>
+        <ul class="benefits">
+          <li class="benefit">Du kaufst weniger Strom vom Netz.</li>
+          <li class="benefit">Steigende Strompreise treffen dich weniger.</li>
+          <li class="benefit">Dein Strom kommt vom eigenen Dach.</li>
+        </ul>
+      </div>
+      <div class="light-fig">
+        <div class="frame-wrap">
+          <figure class="frame">
+            <img class="fallback" src="assets/light-after.webp" width="1180" height="1210" loading="lazy" alt="Dach mit neu montierten Solarmodulen, daneben ein Gerüst">
+            <canvas id="fx2" aria-hidden="true"></canvas>
+          </figure>
+          <button class="hold" type="button" id="hold" aria-describedby="hold-hint">
+            <svg class="ring" viewBox="0 0 48 48" aria-hidden="true">
+              <circle class="ring-bg" cx="24" cy="24" r="20"/>
+              <circle class="ring-fg" cx="24" cy="24" r="20"/>
+              <circle class="ring-sun" cx="24" cy="24" r="6"/>
+            </svg>
+            <span class="lbl" id="hold-label">Gedrückt halten: Licht an</span>
+          </button>
+        </div>
+        <p class="hint" id="hold-hint">Mit der Tastatur: Leertaste gedrückt halten.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section class="services" id="leistungen">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>Leistungen</p>
+      <h2 class="h2" data-reveal>Was wir bauen.</h2>
+      <ul class="svc-list" data-stagger>
+        <li class="svc" data-reveal>
+          <svg class="ico draw" viewBox="0 0 64 64" aria-hidden="true">
+            <path pathLength="1" d="M6 32 L32 12 L58 32"/>
+            <path pathLength="1" d="M12 28 V54 H52 V28"/>
+            <path pathLength="1" d="M22 36 L32 28 L44 36 L34 44 Z"/>
+            <path pathLength="1" d="M27 32 L39 40"/>
+            <circle class="sun" pathLength="1" cx="54" cy="10" r="4"/>
+          </svg>
+          <h3>Photovoltaik</h3>
+          <p>Anlagen für Ein- und Zweifamilienhäuser. Für dein Dach geplant, nicht von der Stange.</p>
+        </li>
+        <li class="svc" data-reveal>
+          <svg class="ico draw" viewBox="0 0 64 64" aria-hidden="true">
+            <rect pathLength="1" x="8" y="18" width="42" height="28" rx="5"/>
+            <path pathLength="1" d="M50 27 H55 V37 H50"/>
+            <path pathLength="1" d="M17 27 V37 M26 27 V37 M35 27 V37"/>
+          </svg>
+          <h3>Stromspeicher</h3>
+          <p>Speichert den Strom vom Mittag für den Abend. So nutzt du mehr davon selbst.</p>
+        </li>
+        <li class="svc" data-reveal>
+          <svg class="ico draw" viewBox="0 0 64 64" aria-hidden="true">
+            <rect pathLength="1" x="18" y="6" width="28" height="36" rx="6"/>
+            <circle pathLength="1" cx="32" cy="18" r="4"/>
+            <path pathLength="1" d="M32 42 V50 C32 60 48 58 48 48 V38"/>
+            <path pathLength="1" d="M44 38 H52"/>
+          </svg>
+          <h3>Wallbox</h3>
+          <p>Lade dein E-Auto mit Strom vom eigenen Dach.</p>
+        </li>
+        <li class="svc" data-reveal>
+          <svg class="ico draw" viewBox="0 0 64 64" aria-hidden="true">
+            <path pathLength="1" d="M6 56 H58"/>
+            <path pathLength="1" d="M12 56 V28 H52 V56"/>
+            <path pathLength="1" d="M10 24 L16 16 H27 L21 24 Z"/>
+            <path pathLength="1" d="M25 24 L31 16 H42 L36 24 Z"/>
+            <path pathLength="1" d="M40 24 L46 16 H57 L51 24 Z"/>
+            <path pathLength="1" d="M20 38 H28 M36 38 H44 M20 48 H28 M36 48 H44"/>
+          </svg>
+          <h3>Flachdach und Gewerbe</h3>
+          <p>Größere Dächer, größere Anlagen. Für Flachdächer und Betriebe.</p>
+        </li>
+        <li class="svc" data-reveal>
+          <svg class="ico draw" viewBox="0 0 64 64" aria-hidden="true">
+            <path pathLength="1" d="M14 24a18 18 0 0 1 31.5 -9.5"/>
+            <path pathLength="1" d="M45.5 8 L46.5 15.5 L39 16.8"/>
+            <path pathLength="1" d="M50 40a18 18 0 0 1 -31.5 9.5"/>
+            <path pathLength="1" d="M18.5 56 L17.5 48.5 L25 47.2"/>
+            <circle class="sun" pathLength="1" cx="32" cy="32" r="3.5"/>
+          </svg>
+          <h3>Repowering</h3>
+          <p>Neue Technik für eine alte Anlage. Wechselrichter erneuern oder Module und Speicher ergänzen.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Fragen -->
+  <section class="faq" id="fragen">
+    <div class="wrap faq-grid">
+      <div class="faq-head">
+        <p class="eyebrow"><span class="dot"></span>Fragen</p>
+        <h2 class="h2" data-reveal>Ehrliche Antworten.</h2>
+        <p class="lead" data-reveal>Noch etwas offen? Ruf einfach an oder schreib uns bei WhatsApp.</p>
+      </div>
+      <div class="faq-list" data-stagger>
+        <details class="qa" data-reveal>
+          <summary><span>Lohnt sich Photovoltaik für mein Haus?</span><span class="plus" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Meist ja, aber nicht immer. Oft liest man von 8 bis 12 Jahren, bis sich eine Anlage bezahlt macht. Bei dir hängt es von Dach, Stromverbrauch und Speicher ab. Wir rechnen es beim Termin mit deinen echten Zahlen durch und sagen dir auch, wenn es sich nicht lohnt.</p></div>
+        </details>
+        <details class="qa" data-reveal>
+          <summary><span>Brauche ich einen Stromspeicher?</span><span class="plus" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Nicht zwingend. Ohne Speicher nutzt du oft nur etwa ein Drittel des Solarstroms selbst. Mit Speicher können es bis zu 80 Prozent sein. Ob er sich für dich lohnt, klären wir beim Termin.</p></div>
+        </details>
+        <details class="qa" data-reveal>
+          <summary><span>Was ist mit meinem Zählerschrank?</span><span class="plus" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Den sehen wir uns vor dem Angebot an. Ältere Zählerschränke müssen manchmal angepasst werden, damit alles den heutigen Vorgaben entspricht. Dann steht das im Angebot, und du wirst später nicht überrascht.</p></div>
+        </details>
+        <details class="qa" data-reveal>
+          <summary><span>Wer kümmert sich um die Anmeldung beim Netzbetreiber?</span><span class="plus" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Das übernehmen wir. Du gibst uns die nötigen Angaben, den Rest erledigen wir.</p></div>
+        </details>
+        <details class="qa" data-reveal>
+          <summary><span>Muss ich etwas im Voraus bezahlen?</span><span class="plus" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Wie und wann du zahlst, steht im Angebot. Du siehst es, bevor du unterschreibst.</p></div>
+        </details>
+        <details class="qa" data-reveal>
+          <summary><span>Was, wenn nach dem Einbau etwas nicht stimmt?</span><span class="plus" aria-hidden="true"></span></summary>
+          <div class="ans"><p>Ruf uns an oder schreib uns per WhatsApp. Wir sehen es uns an.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt: der eine Aufruf -->
+  <section class="cta" id="kontakt">
+    <div class="rays" aria-hidden="true"><svg viewBox="-200 -200 400 400"><g id="rays"></g></svg></div>
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <p class="eyebrow"><span class="dot"></span>Kontakt</p>
+        <h2 class="display xl" data-reveal>Sag uns, wo dein Dach ist.</h2>
+        <p class="lead" data-reveal>Ein Anruf, eine Nachricht oder das Formular. Du entscheidest, wie du uns erreichst.</p>
+        <div class="cta-row" data-reveal>
+          <a class="btn btn-primary btn-lg pulse" href="tel:+4915737627917">Jetzt anrufen</a>
+          <a class="btn btn-ghost btn-lg" href="https://wa.me/4915737627917?text=Hallo%20Osso%20Solar%20Energy%2C%20ich%20m%C3%B6chte%20einen%20Vor-Ort-Termin%20vereinbaren." rel="noopener">Per WhatsApp schreiben</a>
+        </div>
+        <dl class="contact" data-reveal>
+          <div><dt>Telefon</dt><dd><a href="tel:+4915737627917">0157 37627917</a></dd></div>
+          <div><dt>E-Mail</dt><dd><a href="mailto:info.ossosolarenergy@gmail.com">info.ossosolarenergy@gmail.com</a></dd></div>
+          <div><dt>Region</dt><dd>Umkreis von 400 km um Eislingen/Fils</dd></div>
+        </dl>
+      </div>
+
+      <div class="contact-form-wrap" data-reveal>
+        <div class="form-success" id="formSuccess" role="status">
+          <p>Danke, deine Nachricht ist unterwegs. Wir melden uns bald bei dir.</p>
+        </div>
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/info.ossosolarenergy@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Neue Anfrage über die Website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <!-- DEPLOY STEP: die echte Adresse eintragen, sobald die Seite live ist -->
+          <input type="hidden" name="_next" value="https://EXAMPLE.invalid/?formular=erfolgreich#kontakt">
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Name*</label>
+              <input type="text" id="cf-name" name="Name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="cf-phone">Telefon</label>
+              <input type="tel" id="cf-phone" name="Telefon" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cf-email">E-Mail*</label>
+            <input type="email" id="cf-email" name="E-Mail" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="cf-interest">Interesse an</label>
+            <select id="cf-interest" name="Interesse">
+              <option>Photovoltaik</option>
+              <option>Stromspeicher</option>
+              <option>Wallbox</option>
+              <option>Flachdach oder Gewerbe</option>
+              <option>Etwas anderes</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cf-message">Nachricht*</label>
+            <textarea id="cf-message" name="Nachricht" required placeholder="Erzähl uns kurz von deinem Dach."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Anfrage senden</button>
+          <p class="form-hint">* Pflichtfeld. Deine Nachricht geht per E-Mail an uns, über den Dienst FormSubmit. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <img class="foot-logo" src="assets/logo-full-420.webp" width="210" height="290" loading="lazy" alt="Osso Solar Energy, Für Nachhaltige Lösungen">
+    <div class="foot-col">
+      <p><b>Osso Solar Energy</b><br>Wasserberg Straße 11<br>73054 Eislingen/Fils</p>
+      <p><a href="tel:+4915737627917">0157 37627917</a><br><a href="mailto:info.ossosolarenergy@gmail.com">info.ossosolarenergy@gmail.com</a></p>
+    </div>
+    <div class="foot-col">
+      <p><a href="impressum.html">Impressum</a><br><a href="datenschutz.html">Datenschutz</a></p>
+      <p class="fine">Die Fotos im Ablauf zeigen echte Projekte von Osso Solar Energy. Die Bilder im Seitenanfang sind Visualisierungen.</p>
+    </div>
+  </div>
+  <p class="copy">© 2026 Osso Solar Energy</p>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
