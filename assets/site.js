@@ -580,15 +580,6 @@
     applyRM();
   }
 
-  /* the contact form posts to FormSubmit and comes back with ?formular=erfolgreich;
-     show the thank-you message in its place and drop the marker from the address bar */
-  function setupContactForm() {
-    if (location.search.indexOf('formular=erfolgreich') === -1) return;
-    const box = $('#formSuccess');
-    if (box) box.classList.add('show');
-    if (history.replaceState) history.replaceState(null, '', location.pathname + '#kontakt');
-  }
-
   /* ------------------------------------------------------------------ */
   function init() {
     splitText();
@@ -596,7 +587,6 @@
     setupCable();
     buildRays();
     setupHold();
-    setupContactForm();
     layout();
     RM.addEventListener('change', applyMode);
     window.__ossoReady = true;
